@@ -1,5 +1,5 @@
 import os
-
+import subprocess
 
 package_list = []
 
@@ -18,5 +18,7 @@ def install_package(package_list: list):
         #install all packages, call os.system() 
         #pip install all libraries
         os.system("pip install {}".format(package))
-
-
+        
+def installed_packages():
+    exitcode, output = subprocess.getstatusoutput("pip freeze")
+    print(output)
