@@ -3,11 +3,12 @@ from views import *
 
 
 def main():
-    app = QApplication(sys.argv)
-
-    window = MainWindow()
-    window.show()
-    app.exec_()
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
 
 
 
