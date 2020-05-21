@@ -1,7 +1,7 @@
 import os
 
 
-package_list = [None]
+package_list = []
 
 
 def add_package(package: str):
