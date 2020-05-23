@@ -12,7 +12,7 @@ class MainWindow(QGroupBox):
 
 
         vbox = QVBoxLayout()
-        vbox.addStretch(1)
+        #vbox.addStretch(1)
 
         vbox.addWidget(anpv)
         vbox.addWidget(ipv)
@@ -21,7 +21,7 @@ class MainWindow(QGroupBox):
 
         hbox = QHBoxLayout()
         hbox.addWidget(ppv)
-        
+        #hbox.addStretch(1)
         hbox.addLayout(vbox)
 
         self.setLayout(hbox)
@@ -38,7 +38,7 @@ class AddNewPackagesView(QGroupBox):
         # add clicked.connect to buttons
 
         hbox = QHBoxLayout()
-        hbox.addStretch(1)
+        #hbox.addStretch(1)
 
         hbox.addWidget(self.addPackage)
         hbox.addWidget(self.addButton)     
@@ -50,13 +50,13 @@ class InstallPackagesView(QGroupBox):
         super().__init__("Chosen Packages")
 
         hbox = QHBoxLayout()
-        hbox.addStretch(1)
+        #hbox.addStretch(1)
 
         self.chosenPackagesList = QListWidget()
         self.removeButton = QPushButton("Remove")
 
         hbox = QHBoxLayout()
-        hbox.addStretch()
+        #hbox.addStretch()
 
         hbox.addWidget(self.chosenPackagesList)
         hbox.addWidget(self.removeButton)
@@ -77,7 +77,7 @@ class ProgressView(QGroupBox):
         self.removeButton = QPushButton("Install packages")
 
         hbox = QHBoxLayout()
-        hbox.addStretch()
+        #hbox.addStretch()
 
         hbox.addWidget(self.installProgressBar)
         hbox.addWidget(self.removeButton)
@@ -96,7 +96,7 @@ class PreviousPackagesView(QGroupBox):
         self.removeButton = QPushButton("Remove")
 
         hbox = QHBoxLayout()
-        hbox.addStretch()
+        #hbox.addStretch()
 
         hbox.addWidget(self.PackagesList)
         hbox.addWidget(self.removeButton)
