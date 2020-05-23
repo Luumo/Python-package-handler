@@ -26,5 +26,11 @@ def installed_packages():
         installed_packages.append([name, version])
     return installed_packages
 
-def delete_packages(package_name: str)
-    
+def delete_packages(package_name: str):
+    pass
+
+
+def install_python():
+    #TODO: Open Powershell, download python, then run file   
+    cmd = "python-3.8.0.exe /quiet InstallAllUsers=1 PrependPath=1 Include_test=0"
+    os.system(cmd)

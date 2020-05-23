@@ -1,15 +1,13 @@
+  
 import sys
 from views import *
 
 
 def main():
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
+    app = QApplication(sys.argv)
+    win = MainWindow()
+    win.show()
     sys.exit(app.exec_())
-
 
 
 if __name__ == "__main__":
